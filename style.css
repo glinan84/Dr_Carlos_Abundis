@@ -1,0 +1,389 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.experto__cirugia{
+    margin-top: 15px;
+    padding-left: 100px;
+}
+.menu__opciones{
+    font-size: large;
+    border-radius: solid 10px   rgb(241, 241, 247);
+    background-position: 50px;
+    justify-content: space-evenly;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+    flex: content;
+    list-style: circle;
+    text-transform:uppercase;
+    border: outset   20px    rgb(5, 11, 46);
+}
+.menu__opciones:hover{
+    transform: scale(0.85);
+    transform-style: unset;
+    background-image: radial-gradient(rgb(5, 11, 46));
+}
+body{
+    background-color: rgb(210, 234, 255);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-optical-sizing:unset;
+    color: rgb(1, 1, 46);
+}
+header{
+    padding: 0;
+    margin-top: 0px;
+    background-color: rgb(26, 58, 105);
+    display: flex;
+}
+
+h1{
+    color: rgb(15, 39, 75);
+    margin: 0px 100px 10px 0px;  
+    border-bottom: 5px solid rgb(15, 39, 75);  
+}
+h2{
+    color: rgb(1, 14, 34);
+}
+.h2Inicio{
+    margin-top: 50px;
+    color: rgb(1, 11, 71);
+    justify-content: center;
+    font-size: 150%;
+}
+section{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 5fr 5fr 5fr 5fr 5fr;
+}
+.parrafo__presentacion{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-right: 150px;
+    text-align: justify;
+}
+h3{
+    color:rgb(24, 0, 61);
+    font-size-adjust: 150%;
+}
+h5{
+    font-size: 20px;
+}
+.conoce__los--beneficios{
+    color: rgb(26, 58, 105);
+    background-color: aliceblue;
+    border-style:dotted;
+    text-align:center ;
+}
+
+.estilismo,
+.abdomen,
+.nariz{
+    display: grid;
+    grid-template-rows: 30% 30% 30%;
+}
+
+.imagenes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ul__menu--inicio,
+article div{
+    display: flex;
+    flex-direction: column;
+    list-style:none;
+    font-size: medium;
+    border: 5px double rgb(12, 1, 83);
+    position:fixed;
+    margin-top: 25px;
+    margin-right: 25px;
+    background-image: url(./imagenes/Fondo-elegante-blanco.jpg);
+}
+
+.conoce__los--beneficios{
+    margin: 50px 100px 10px 0px;
+}
+.tabla__inicio--beneficios{
+    display: grid;
+    grid-template-rows: 30% auto 30%;
+    grid-template-columns: 50% 50%;
+    margin: 10px 100px 200px 200px;
+    border: 5px double rgb(12, 1, 83);
+    text-transform: uppercase;
+}
+.fotoDoctor{
+    margin-left: 50px;
+    border-radius: 1cm;
+    border: double 10px;
+}
+p{
+    margin-left: 200px;
+    font-size: 20px;
+}
+
+.foto__servicio1:hover,
+.foto__servicio2:hover,
+.foto__servicio3:hover,
+.foto__servicio4:hover,
+.foto__servicio5:hover{
+    transform: scale(2);
+    border: double 10px;
+}
+.tablaServicios{
+    margin-left: 0px;
+}
+
+.p__Instagram--dr{
+    margin-top: 50px;
+}
+table{
+    margin-left: 200px;
+    background-color: rgb(226, 226, 255);
+}
+tr{
+    background-color: rgb(169, 203, 253);
+    color: rgb(1, 1, 41);
+    justify-items:center;
+    font-style: italic;
+}
+.imagenes__servicios{
+    background-image: white;
+    text-align: center;
+}
+.img__class--clientes:hover{
+    transform: translate(200px) scale(1.5);
+}
+.img__class--mapa:hover{
+    transform: scale(1.5) translateX(200px);
+}
+form{
+    border: double rgb(26, 58, 105) 1px;
+    margin-left: 200px;
+}
+iframe{
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+.presentacionDoctor,
+article div{
+    margin-left: 500px;
+    margin-right: 300px;
+    padding-top: 0px;
+    border: solid 2.5px;
+}
+.img__class--clientes,
+.img__class--mapa{
+    margin-left: 200px;
+    border: double pink  10px;
+}
+
+
+.implicaciones:hover,
+.nariz__perfecta:hover{
+    transform: translateX(200px);
+}
+footer{
+    background-color: rgb(26, 58, 105);
+    color: white;
+    padding: 50px;
+    margin-top: 50px;;
+    display: flex;
+    justify-content: center;
+}
+.logo__redes--sociales{
+    width: 5%;
+}
+.logo__redes--sociales:hover{
+    transform: scale(2);
+}
+
+.fotoDoctor{
+    grid-area: fotodoc;
+}
+
+.div__points{
+    font-size: 100px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .h2Inicio{
+        font-size: larger;
+        text-align: center;
+    }
+    
+    .conoce__los--beneficios{
+        font-size: medium;
+        text-align: center;
+        text-transform:uppercase;
+        background-color: darkblue;
+        color: aliceblue;
+    }
+
+    .titulos__tabla--inicio{
+        display: grid;
+        font-size: large;
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+
+    .imagenes{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        border: 5px;
+    }
+
+    .logo__dr--Carlos{
+        text-align: center;
+    }
+
+    .menu__opciones,
+    .ul__menu--inicio{
+        font-size: 100%;
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        border: outset   10px    rgb(5, 11, 46);
+        padding-top: 0px;
+        font-size: smaller;
+    }
+    
+    .experto{
+        font-size: 70%;
+    }
+   
+    .presentacion__doctor{
+        font-size: medium;
+        background-color: rgb(116, 153, 255);
+    }
+
+    .parrafo__presentacion{
+        display: grid;
+        grid-template-columns: 1fr  4fr;
+        justify-content: end;
+    }
+
+    .fotoDoctor{
+        border-radius: 5cm white;
+        text-align: left;
+        margin-left: 0px;
+        border-image: round;
+        
+    }
+
+    footer{
+        font-size: 50%;
+        background-color: rgb(55, 67, 238);
+        image-resolution:unset;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .h2Inicio{
+        font-size: larger;
+        text-align: center;
+    }
+    
+    .conoce__los--beneficios{
+        font-size: medium;
+        text-align: center;
+        text-transform:uppercase;
+        background-color: darkblue;
+        color: aliceblue;
+    }
+
+    .titulos__tabla--inicio{
+        display: grid;
+        font-size: large;
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+
+    .imagenes{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        border: 5px;
+    }
+
+    .logo__dr--Carlos{
+        text-align: center;
+    }
+
+    .menu__opciones,
+    .ul__menu--inicio{
+        font-size: 100%;
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        border: outset   10px    rgb(5, 11, 46);
+        padding-top: 0px;
+        font-size: smaller;
+    }
+    
+    .experto{
+        font-size: 70%;
+    }
+   
+    .presentacion__doctor{
+        font-size: medium;
+        background-color: rgb(116, 153, 255);
+    }
+
+    .parrafo__presentacion{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 50% 50%;
+    }
+
+    .fotoDoctor{
+        border-radius: 5cm white;
+        text-align: left;
+        margin-left: 0px;
+        border-image: round;
+        
+    }
+
+    footer{
+        font-size: 30%;
+        background-color: rgb(55, 67, 238);
+        image-resolution:unset;
+    }
+    
+}
+
+.conoce__los--beneficios:hover{
+    animation: conoce__los--beneficios 7s;
+}
+
+.servicios:hover{
+    animation: servicios 7s;
+}
+
+@keyframes conoce__los--beneficios{
+    0%{
+        background-color: rgb(183, 250, 255);
+    }
+    25%{
+        border-radius: 80%;
+    }
+    50%{
+        width: 600px;
+        background-image: radial-gradient(blue);
+        color: white
+    }
+}
+
+@keyframes servicios{
+    0%{
+        background-color: rgb(183, 250, 255);
+    }
+    25%{
+        border: solid 80%;
+    }
+}
