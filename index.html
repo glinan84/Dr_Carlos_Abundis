@@ -13,51 +13,72 @@
     <img src="./imagenes/logo-dr.-carlos-abundis-fondo.jpg" alt="" class="logo__dr--Carlos">
     <nav class="menu__opciones">
             <div>
-                <a href="./index.html">Inicio</a>
+                <a class="btn btn-secondary"  href="../index.html">Inicio</a>
             </div>
             <div>
-                <a href="./secciones/presentacion.html">Presentación</a>
+                <a class="btn btn-secondary"  href="./secciones/presentacion.html">Presentación</a>
             </div>
             <div>
-                <a href="./secciones/servicios.html">Servicios</a>
+                <a class="btn btn-secondary"  href="./secciones/servicios.html">Servicios</a>
             </div>
             <div>
-                <a href="./secciones/vidas-renovadas.html">Vidas Renovadas</a>
+                <a class="btn btn-secondary"  href="./secciones/vidas-renovadas.html">Vidas Renovadas</a>
             </div>
             <div>
-                <a href="./secciones/multimedia.html">Multimedia</a>
+                <a class="btn btn-secondary"  href="./secciones/multimedia.html">Multimedia</a>
             </div>
             <div>
-                <a href="./secciones/contacto.html">Contacto</a>
+                <a class="btn btn-secondary"  href="./secciones/contacto.html">Contacto</a>
             </div>
         </ul>
     </nav>
 </header>
-<h2 id="experto__cirugia">Experto en cirugia plástica y reconstructiva</h2>
+<h2 class="experto__cirugia">Experto en cirugia plástica y reconstructiva. Certificado</h2>
 
 
 <h2 class="h2Inicio">Es momento de cambiar tu vida, cambiar cómo te presentas ante los demás.</h2>
 <h2 class="h2Inicio">Tu imagen es tu ser.</h2>
+<p class="parrafo__index">Todo ser humano por deseo personal quiere dar la mejor imagen ante los demàs, pero sobre todo la satisfacciòn de sentirse bien consigo mismo sobre sale ante cualquier deseo. El tiempo en que busca obtener el resultado, conforme avanza la edad, se va reduciendo.<p class="texto__marcado">Por ello me es grato ser participe en esas deceisiones tan importantes para cada uno de los pacientes de mi profesión.</p></p>
+<p class="slogan">SIEMPRE ESTARÉ EN TUS OBJETIVOS</p>
 <body class="cuerpo__del--sitio">
 <h3 class="conoce__los--beneficios">
     Conoce los grandes beneficios en tu vida
 </h3>
-<section class="beneficios">
-        <div class="estilismo">Estilismo facial</div>
-        <div class="abdomen">Definición de abdomen</div>
-        <div class="nariz">Nariz perfecta</div>
-        <div class="imagenes">
-        <div class="cara">
-            <img src="./imagenes/beneficio-cara.jpg" alt="beneficio-cara">
-        </div>
-        <div class="beneabdomen">
-            <img src="./imagenes/beneficio-abdomen.bmp" alt="beneficio-abdomen">
-        </div>
-        <div class="benenariz">
-            <img src="./imagenes/beneficio-nariz.jpg" alt="beneficio-nariz">
-        </div>
+
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-</section>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./imagenes/beneficio-abdomen.jpg" class="d-block w-25" alt="beneficio-abdomen">">
+      </div>
+      <div class="carousel-item">
+        <img src="./imagenes/beneficio-cara.jpg" class="d-block w-25" alt="beneficio-cara">">
+      </div>
+      <div class="carousel-item">
+        <img src="./imagenes/beneficio-nariz.jpg" class="d-block w-25" alt="beneficio-nariz">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+
+
 <footer id="pie">
     Derechos reservados /  Política de privacidad / Términos de uso
     Nombre comercial registrado.
@@ -65,5 +86,8 @@
     <p class="proveedor">Proveedor web: Gerardo Liñán Jiménez</p>
 </footer>
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

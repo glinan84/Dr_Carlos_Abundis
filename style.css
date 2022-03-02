@@ -2,17 +2,13 @@
     padding: 0;
     margin: 0;
 }
-.experto__cirugia{
-    margin-top: 15px;
-    padding-left: 100px;
-    font-style:normal ;
-}
+
 .menu__opciones{
-    font-size: large;
+    font-size: smaller;
     border-radius: solid 10px   rgb(241, 241, 247);
     background-position: 50px;
     justify-content: space-evenly;
-    padding-top: 70px;
+    padding-top: 65px;
     display: flex;
     flex-direction: row;
     flex: content;
@@ -30,12 +26,26 @@ body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-optical-sizing:unset;
     color: rgb(1, 1, 46);
+    padding-top: 0px;
 }
 header{
     padding: 0;
     margin-top: 0px;
     background-color: rgb(26, 58, 105);
     display: flex;
+}
+
+.parrafo__index,
+.texto__marcado{
+    font-style: italic;
+    margin: 50px 50px 50px 50px;
+    text-align: justify;
+}
+
+.slogan{
+    font: bold;
+    font-size: 50px;
+    text-align: center;
 }
 
 h1{
@@ -47,10 +57,11 @@ h2{
     color: rgb(1, 14, 34);
 }
 .h2Inicio{
-    margin-top: 50px;
+    margin-top: 20px;
     color: rgb(1, 11, 71);
     justify-content: center;
     font-size: 150%;
+    text-align: center;
 }
 section{
     display: grid;
@@ -73,21 +84,12 @@ h5{
 .conoce__los--beneficios{
     color: rgb(26, 58, 105);
     background-color: aliceblue;
-    border-style:dotted;
+    border-style:dotted ;
     text-align:center ;
-    justify-content: center;}
-
-.beneficios,
-.estilismo,
-.abdomen,
-.nariz{
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 50% 50%;
-    align-items: center;
+    justify-content: first baseline;
+}
+.carouselExampleIndicators{
     align-content: center;
-    text-align: center;
-    margin-left: 100px;
 }
 
 .imagenes{
@@ -95,6 +97,7 @@ h5{
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: "estilismo abdomen nariz" 1fr 1fr 1fr;
     grid-template-rows: 50% 50%;
+    text-align: center;
 }
 
 .ul__menu--inicio,
@@ -137,7 +140,7 @@ p{
 .foto__servicio4:hover,
 .foto__servicio5:hover{
     transform: scale(2);
-    border: double 10px;
+    transition:all 1s;
 }
 .tablaServicios{
     margin-left: 0px;
@@ -161,10 +164,14 @@ tr{
     text-align: center;
 }
 .img__class--clientes:hover{
-    transform: translate(200px) scale(1.5);
+    transform: translate(100px) scale(1.5);
+    transition: all 1.5s;
+    border-radius: 10%;
 }
 .img__class--mapa:hover{
-    transform: scale(1.5) translateX(200px);
+    transform: scale(1.5) translateX(100px);
+    transition: all 1.5s;
+    border: none;
 }
 form{
     border: double rgb(26, 58, 105) 1px;
@@ -184,13 +191,13 @@ article div{
 .img__class--clientes,
 .img__class--mapa{
     margin-left: 200px;
-    border: double pink  10px;
+    border: solid rgb(12, 12, 59)  5px;
 }
 
 
 .implicaciones:hover,
 .nariz__perfecta:hover{
-    transform: translateX(200px);
+    transform: translateX(200px) 5s;
 }
 footer{
     background-color: rgb(26, 58, 105);
@@ -216,32 +223,71 @@ footer{
 }
 
 
-@media screen and (max-width: 500px) {
+.card-body{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10% 90%;
+    background-color: rgb(173, 173, 255);
+}
+
+.seccionClientes,
+.card{
+    margin-left: 50px;
+}
+.card-text{
+    margin-left: 0px;
+}
+
+
+
+
+
+
+
+@media (max-width: 549px){
+    .experto__cirugia{
+        font-size: medium;
+        background-color: rgb(5, 11, 46);
+        color:white;
+        margin-top: 0px;
+    }
     .h2Inicio{
-        font-size: larger;
+        font-size: medium;
         text-align: center;
+    }
+    .parrafo__index,
+    .texto__marcado,
+    .parrafo__presentacion{
+        font-size: small;
+    }
+
+    .slogan{
+        font-size: large;
+        background-color: rgb(5, 11, 46);
+        color: white;
+        text-align: center;
+        margin-left: 0px;
     }
     
     .conoce__los--beneficios{
         font-size: medium;
         text-align: center;
         text-transform:uppercase;
-        background-color: darkblue;
-        color: aliceblue;
     }
 
-    .titulos__tabla--inicio{
+    .beneficios{
         display: grid;
         font-size: large;
-        text-align: center;
-        grid-template-columns: 1fr;
+        text-align: justify;
+        grid-template-columns: 2fr 1f 1fr;
+        margin-top: 0px;
     }
 
     .imagenes{
         display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 1fr 1fr 1fr;
-        border: 5px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-bottom: 50px;
     }
 
     .logo__dr--Carlos{
@@ -254,9 +300,11 @@ footer{
         display: flex;
         justify-content:center;
         flex-direction: column;
+        text-align: right;
         border: outset   10px    rgb(5, 11, 46);
         padding-top: 0px;
         font-size: smaller;
+        margin-right: 0px;
     }
     
     .experto{
@@ -264,14 +312,15 @@ footer{
     }
    
     .presentacion__doctor{
-        font-size: medium;
+        font-size: large;
         background-color: rgb(116, 153, 255);
     }
 
     .parrafo__presentacion{
         display: grid;
-        grid-template-columns: 1fr  4fr;
-        justify-content: end;
+        grid-template-columns: 1fr;
+        grid-template-rows:  1fr;
+        text-align: justify;
     }
 
     .fotoDoctor{
@@ -279,45 +328,63 @@ footer{
         text-align: left;
         margin-left: 0px;
         border-image: round;
-        
     }
 
     footer{
-        font-size: 50%;
-        background-color: rgb(55, 67, 238);
+        font-size: 70%;
         image-resolution:unset;
     }
+
     
 }
 
 
 
-@media screen and (max-width: 800px) {
+
+@media (min-width:550px) and (max-width: 800px){
+    .experto__cirugia{
+        font-size: medium;
+        background-color: rgb(5, 11, 46);
+        color:white;
+        margin-top: 0px;
+    }
     .h2Inicio{
-        font-size: larger;
+        font-size: medium;
         text-align: center;
+    }
+    .parrafo__index,
+    .texto__marcado,
+    .parrafo__presentacion{
+        font-size: small;
+    }
+
+    .slogan{
+        font-size: large;
+        background-color: rgb(5, 11, 46);
+        color: white;
+        text-align: center;
+        margin-left: 0px;
     }
     
     .conoce__los--beneficios{
         font-size: medium;
         text-align: center;
         text-transform:uppercase;
-        background-color: darkblue;
-        color: aliceblue;
     }
 
-    .titulos__tabla--inicio{
+    .beneficios{
         display: grid;
         font-size: large;
-        text-align: center;
-        grid-template-columns: 1fr;
+        text-align: justify;
+        grid-template-columns: 2fr 1f 1fr;
+        margin-top: 0px;
     }
 
     .imagenes{
         display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 1fr 1fr 1fr;
-        border: 5px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-bottom: 50px;
     }
 
     .logo__dr--Carlos{
@@ -330,9 +397,11 @@ footer{
         display: flex;
         justify-content:center;
         flex-direction: column;
+        text-align: right;
         border: outset   10px    rgb(5, 11, 46);
         padding-top: 0px;
         font-size: smaller;
+        margin-right: 0px;
     }
     
     .experto{
@@ -340,31 +409,127 @@ footer{
     }
    
     .presentacion__doctor{
-        font-size: medium;
+        font-size: large;
         background-color: rgb(116, 153, 255);
     }
 
     .parrafo__presentacion{
         display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 50% 50%;
+        grid-template-columns: 1fr;
+        grid-template-rows:  1fr;
+        text-align: justify;
     }
 
     .fotoDoctor{
         border-radius: 5cm white;
         text-align: left;
-        margin-left: 0px;
+        margin-left: 50px;
         border-image: round;
-        
     }
 
     footer{
-        font-size: 30%;
-        background-color: rgb(55, 67, 238);
+        font-size: 70%;
         image-resolution:unset;
     }
     
 }
+
+
+
+@media (min-width: 801px) and (max-width: 1110px){
+    .experto__cirugia{
+        font-size: normal;
+        color:rgb(5, 11, 46);
+        margin-top: 0px;
+        text-align: center;
+    }
+    .h2Inicio{
+        font-size: medium;
+        text-align: center;
+    }
+    .parrafo__index,
+    .texto__marcado,
+    .parrafo__presentacion{
+        font-size: large;
+    }
+
+    .slogan{
+        font-size: large;
+        background-color: rgb(5, 11, 46);
+        color: white;
+        text-align: center;
+        margin-left: 0px;
+    }
+    
+    .conoce__los--beneficios{
+        font-size: medium;
+        text-align: center;
+        text-transform:uppercase;
+    }
+
+    .beneficios{
+        display: grid;
+        font-size: large;
+        text-align: justify;
+        grid-template-columns: 2fr 1f 1fr;
+        margin-top: 0px;
+    }
+
+    .imagenes{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-bottom: 50px;
+    }
+
+    .logo__dr--Carlos{
+        text-align: center;
+    }
+
+    .menu__opciones,
+    .ul__menu--inicio{
+        display: flex;
+        justify-content:center;
+        flex-direction: row;
+        flex: content;
+        text-align: center;
+        border: outset   10px    rgb(5, 11, 46);
+        padding-top: 0px;
+        font-size: medium;
+        justify-content: space-evenly;
+        padding-top: 65px;
+    }
+    
+    .experto{
+        font-size: 70%;
+    }
+   
+    .presentacion__doctor{
+        font-size: large;
+        background-color: rgb(116, 153, 255);
+    }
+
+    .parrafo__presentacion{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:  1fr;
+        text-align: justify;
+    }
+
+    .fotoDoctor{
+        border-radius: 5cm white;
+        text-align: center;
+        margin-left: 20px;
+        border-image: round;
+    }
+
+    footer{
+        font-size: 70%;
+        image-resolution:unset;
+    }
+    
+}
+
 
 .conoce__los--beneficios:hover{
     animation: conoce__los--beneficios 7s;
@@ -379,20 +544,11 @@ footer{
         background-color: rgb(183, 250, 255);
     }
     25%{
-        border-radius: 80%;
+        border-radius: 10%;
     }
     50%{
-        width: 600px;
+        width:fit-content;
         background-image: radial-gradient(blue);
-        color: white
-    }
-}
-
-@keyframes servicios{
-    0%{
-        background-color: rgb(183, 250, 255);
-    }
-    25%{
-        border: solid 80%;
+        color: rgb(10, 10, 44)
     }
 }
