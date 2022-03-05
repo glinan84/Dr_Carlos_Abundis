@@ -48,6 +48,7 @@ header{
     text-align: center;
 }
 
+
 h1{
     color: rgb(15, 39, 75);
     margin: 0px 100px 10px 0px;  
@@ -243,7 +244,6 @@ footer{
 
 
 
-
 @media (max-width: 549px){
     .experto__cirugia{
         font-size: medium;
@@ -291,24 +291,31 @@ footer{
     }
 
     .logo__dr--Carlos{
-        text-align: center;
+        image-resolution: 50px;
     }
 
     .menu__opciones,
     .ul__menu--inicio{
-        font-size: 100%;
+        font-size: 50%;
         display: flex;
         justify-content:center;
         flex-direction: column;
         text-align: right;
         border: outset   10px    rgb(5, 11, 46);
         padding-top: 0px;
-        font-size: smaller;
         margin-right: 0px;
     }
-    
+  
+    .seccionClientes{
+        display: flex;
+        flex-direction: column;
+        font-size: 50%;
+    }
+
+
     .experto{
-        font-size: 70%;
+        font-size: 150%;
+        text-align: center;
     }
    
     .presentacion__doctor{
@@ -321,6 +328,8 @@ footer{
         grid-template-columns: 1fr;
         grid-template-rows:  1fr;
         text-align: justify;
+        margin-left: 25px;
+        margin-right: 25px;
     }
 
     .fotoDoctor{
@@ -333,6 +342,12 @@ footer{
     footer{
         font-size: 70%;
         image-resolution:unset;
+    }
+    .logo__redes--sociales{
+        image-resolution: 50px;
+    }
+    .proveedor{
+        font-size: smaller;
     }
 
     
@@ -404,6 +419,13 @@ footer{
         margin-right: 0px;
     }
     
+    .seccionClientes{
+        display: flex;
+        flex-direction: column;
+        font-size: 50%;
+    }
+
+
     .experto{
         font-size: 70%;
     }
@@ -430,6 +452,10 @@ footer{
     footer{
         font-size: 70%;
         image-resolution:unset;
+    }
+
+    .proveedor{
+        font-size: 80%;
     }
     
 }
@@ -538,6 +564,34 @@ footer{
 .servicios:hover{
     animation: servicios 7s;
 }
+
+.slogan{
+    animation: slogan 10s;
+}
+
+
+@keyframes slogan{
+    0%{
+        background-color: rgb(183, 250, 255);
+    }
+    25%{
+        background-color: rgb(10, 10, 44);
+        color: white;
+        font-size: 70%;
+    }
+    50%{
+        color: rgb(10, 10, 44)
+        font-size: 90%
+    }
+    75%{
+        font-size: 100%;
+        border: double white 5px;
+    }
+    90%{
+        font-size: 110%;
+    }
+}
+
 
 @keyframes conoce__los--beneficios{
     0%{
