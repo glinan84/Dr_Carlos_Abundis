@@ -614,12 +614,24 @@ footer{
 
 
 $redes:(
-    instagram: red,
-    facebook: rgb(15, 15, 85),
+    "instagram": red,
+    "facebook": rgb(15, 15, 85)
 );
 
 @each $red, $color in $redes{
     .btn--#{$red}{
-        background-color: $colorbase;
+        background-color: $color;
+        font-size: large;
+        color: white;
     }
+};
+
+.servicios{
+    border: 3px blue;
+    background-color: white;
+}
+
+.tablaServicios{
+    @extend .slogan;
+    border-width: 5px;  
 }

@@ -62,7 +62,7 @@ header {
   margin: 50px 50px 50px 50px;
   text-align: justify; }
 
-.slogan {
+.slogan, .tablaServicios {
   font: bold;
   font-size: 50px;
   text-align: center; }
@@ -257,7 +257,7 @@ footer {
   .texto__marcado,
   .parrafo__presentacion {
     font-size: small; }
-  .slogan {
+  .slogan, .tablaServicios {
     font-size: large;
     background-color: #050b2e;
     color: white;
@@ -333,7 +333,7 @@ footer {
   .texto__marcado,
   .parrafo__presentacion {
     font-size: small; }
-  .slogan {
+  .slogan, .tablaServicios {
     font-size: large;
     background-color: #050b2e;
     color: white;
@@ -405,7 +405,7 @@ footer {
   .texto__marcado,
   .parrafo__presentacion {
     font-size: large; }
-  .slogan {
+  .slogan, .tablaServicios {
     font-size: large;
     background-color: #050b2e;
     color: white;
@@ -465,7 +465,7 @@ footer {
 .servicios:hover {
   animation: servicios 7s; }
 
-.slogan {
+.slogan, .tablaServicios {
   animation: slogan 10s; }
 
 @keyframes slogan {
@@ -493,3 +493,20 @@ footer {
     width: fit-content;
     background-image: radial-gradient(blue);
     color: #0a0a2c; } }
+
+.btn--instagram {
+  background-color: red;
+  font-size: large;
+  color: white; }
+
+.btn--facebook {
+  background-color: #0f0f55;
+  font-size: large;
+  color: white; }
+
+.servicios {
+  border: 3px blue;
+  background-color: white; }
+
+.tablaServicios {
+  border-width: 5px; }
