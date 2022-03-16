@@ -611,3 +611,15 @@ footer{
         color: rgb(10, 10, 44)
     }
 }
+
+
+$redes:(
+    instagram: red,
+    facebook: rgb(15, 15, 85),
+);
+
+@each $red, $color in $redes{
+    .btn--#{$red}{
+        background-color: $colorbase;
+    }
+}
