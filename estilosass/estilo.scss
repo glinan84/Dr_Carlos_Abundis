@@ -69,6 +69,8 @@ h2{
     font-size: 150%;
     text-align: center;
 }
+
+
 section{
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
@@ -80,6 +82,11 @@ section{
     margin-right: 150px;
     text-align: justify;
 }
+
+.inicia__marzo{
+    align-items: center;
+}
+
 h3{
     color:rgb(24, 0, 61);
     font-size-adjust: 150%;
@@ -94,8 +101,11 @@ h5{
     text-align:center ;
     justify-content: first baseline;
 }
-.carouselExampleIndicators{
-    align-content: center;
+.carousel-inner{
+    border: solid 5px rgb(162, 162, 255);
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 .imagenes{
@@ -130,8 +140,9 @@ article div{
     border: 5px double rgb(12, 1, 83);
     text-transform: uppercase;
 }
-.fotoDoctor{
-    margin-left: 50px;
+.fotoDoctor,
+.fellowship{
+    align-items: center;
     border-radius: 1cm;
     border: double 10px;
 }
@@ -220,8 +231,10 @@ footer{
     transform: scale(2);
 }
 
-.fotoDoctor{
+.fotoDoctor,
+.fellowship{
     grid-area: fotodoc;
+    align-items: center;
 }
 
 .div__points{
@@ -238,13 +251,23 @@ footer{
 
 .seccionClientes,
 .card{
-    margin-left: 50px;
+    margin-left: 15px;
+    display: grid;
+    grid-template-rows: max-content;
+    font-size: 50%;    
 }
 .card-text{
     margin-left: 0px;
 }
 
 
+form{
+    background-color: rgb(16, 16, 61);
+    font-weight: 50;
+    border: double rgb(16, 16, 61);
+    color: white;
+    margin: 10px 50px 10px 50px;
+}
 
 
 
@@ -337,7 +360,8 @@ footer{
         margin-right: 25px;
     }
 
-    .fotoDoctor{
+    .fotoDoctor,
+    .fellowship{
         border-radius: 5cm white;
         text-align: left;
         margin-left: 0px;
@@ -447,7 +471,8 @@ footer{
         text-align: justify;
     }
 
-    .fotoDoctor{
+    .fotoDoctor,
+    .fellowship{
         border-radius: 5cm white;
         text-align: left;
         margin-left: 50px;
@@ -547,7 +572,8 @@ footer{
         text-align: justify;
     }
 
-    .fotoDoctor{
+    .fotoDoctor,
+    .fellowship{
         border-radius: 5cm white;
         text-align: center;
         margin-left: 20px;
@@ -633,5 +659,5 @@ $redes:(
 
 .tablaServicios{
     @extend .slogan;
-    border-width: 5px;  
+    border-width: 5px;
 }

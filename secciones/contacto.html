@@ -39,30 +39,29 @@
 
 <body>
     <h1>Contacto</h1>
+    
+    <p>Con gusto te atenderemos y podemos concretar una cita. Llena el siguiente formulario:</p>
+    
     <form>
         <label for="nombre_apellido">Ingrese su nombre completo</label>
         <input type="text" name="nombre_apellido" />
-        <label for="correo_electronico">Ingresa tu correo electrónico</label>
-        <input type="email" name="correo_electronico">
+        <form>
+            <div>Hombre</div>
+            <input type="radio" name="sexo" value="hombre">
+            <div>Mujer</div>
+            <input type="radio" name="sexo" value="mujer">
+        </form>
     </form>
 
     <form>
         <label for="telefono_de_contacto">Teléfono de contacto</label>
         <input type="number" name="telefono_de_contacto">
+        <label for="correo_electronico">Ingresa tu correo electrónico</label>
+        <input type="email" name="correo_electronico">
+        <div>¿Deseas recibir información?</div>
+        <p>Sí:<input type="radio" name="info" value="información"/></p>
     </form>
 
-    <form>
-        <input type="submit" value="Enviar formulario">
-        <input type="reset" value="Limpiar formulario">
-        <input type="button" value="Sin acciones">
-    </form>
-
-    <form>
-        <div>Hombre</div>
-        <input type="radio" name="sexo" value="hombre">
-        <div>Mujer</div>
-        <input type="radio" name="sexo" value="mujer">
-    </form>
 
     <form>
         <div>Elige tu cirugia de interés</div>
@@ -72,7 +71,7 @@
             <option value="B">Busto</option>
             <option value="N">Nariz</option>
             <option value="O">Otra</option>
-            <label for="marte otra">Marque otra</label>
+            <label for="marque otra">Marque otra</label>
         </select>
     </form>
     
@@ -82,10 +81,15 @@
         <input type="radio" name="acepto" value="Acepto términos">
     </form>
 
+    
+    <form>
+        <input type="submit" value="Enviar formulario" class="btn btn-primary">
+        <input type="reset" value="Limpiar formulario" class="btn btn-primary">
+    </form>
+
     <p>Mapa de Ubicación</p>
     <img src="../imagenes/mapa-hospital-innovare.jpg" alt="mapa-hospital-innovare" class="img__class--mapa">
     <p>Para ir a la ubicación del hospital, da click: <a href="https://www.google.com.mx/search?q=innovare&npsic=0&rflfq=1&rldoc=1&rllag=20702247,-103446029,4&tbm=lcl&sa=X&ved=2ahUKEwjcyIrc0ur1AhUsKEQIHQI2CD4QtgN6BAgDEDs&biw=1366&bih=657&dpr=1#rlfi=hd:;si:341717558886095162;mv:[[20.70330078964558,-103.44260113687896],[20.700781730921843,-103.44767587633515]]">Aquí</a></p>
-
 
     <p class="p__Instagram--dr">Conoce nuestras redes sociales: <a href="https://www.instagram.com/dr.carlosabundis/">Instagram Dr. Carlos Abundis</a></p>
 
@@ -93,6 +97,7 @@
     <footer id="pie">
         Derechos reservados /  Política de privacidad / Términos de uso
         Nombre comercial registrado.
+        <a href="https://www.innovarecirugiaplastica.com/"><img src="../imagenes/logo-innovare.png" alt="Logo-innovare" class="btn-light"></a>
         <div>
           <input type="button" value="Facebook" class="btn--facebook"><A href="https://www.facebook.com/search/top?q=dr.%20carlos%20abundis">Visita aquí</A>
         </div>
